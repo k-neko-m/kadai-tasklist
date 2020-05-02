@@ -10,6 +10,12 @@ class TasksController < ApplicationController
     @task = current_user.tasks.build
   end
   
+  def show
+  end
+  
+  def edit
+  end    
+  
   def create
     @task = current_user.tasks.build(task_params)
     if @task.save
